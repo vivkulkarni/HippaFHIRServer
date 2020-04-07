@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="FullyBound" BoundEndpoints="2" TotalEndpoints="2">
+  <Timestamp>2020-03-25T16:05:41.515493+00:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:HippaToFHIRDemo]" Version="" Culture="" PublicKeyToken="" FullName="[Application:HippaToFHIRDemo], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="HippaToFHIRDemo.patient" RootName="Patient" AssemblyQualifiedName="HippaToFHIRDemo.patient,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.bundle" RootName="Bundle" AssemblyQualifiedName="HippaToFHIRDemo.bundle,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.coverageeligibilityrequest" RootName="CoverageEligibilityRequest" AssemblyQualifiedName="HippaToFHIRDemo.coverageeligibilityrequest,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.coverageeligibilityresponse" RootName="CoverageEligibilityResponse" AssemblyQualifiedName="HippaToFHIRDemo.coverageeligibilityresponse,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_base" RootName="typeOnlySchema" AssemblyQualifiedName="HippaToFHIRDemo.fhir_base,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="a" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="abbr" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="acronym" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="address" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="area" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="b" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="bdo" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="big" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="blockquote" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="br" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="caption" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="cite" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="code" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="col" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="colgroup" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="dd" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="dfn" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="div" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="dl" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="dt" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="em" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="h1" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="h2" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="h3" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="h4" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="h5" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="h6" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="hr" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="i" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="img" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="kbd" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="li" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="map" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="ol" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="p" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="pre" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="q" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="samp" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="small" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="span" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="strong" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="sub" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="sup" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="table" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="tbody" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="td" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="tfoot" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="th" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="thead" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="tr" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="tt" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="ul" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.fhir_xhtml" RootName="var" AssemblyQualifiedName="HippaToFHIRDemo.fhir_xhtml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.xml" RootName="typeOnlySchema" AssemblyQualifiedName="HippaToFHIRDemo.xml,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.t6ransaction" RootName="Root" AssemblyQualifiedName="HippaToFHIRDemo.t6ransaction,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.HippaSchemas.X12_00501_270" RootName="X12_00501_270" AssemblyQualifiedName="HippaToFHIRDemo.HippaSchemas.X12_00501_270,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="HippaToFHIRDemo.HippaSchemas.X12_00501_271" RootName="X12_00501_271" AssemblyQualifiedName="HippaToFHIRDemo.HippaSchemas.X12_00501_271,HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="HippaToFHIRDemo" Version="1.0.0.0" Culture="neutral" PublicKeyToken="1621b0c8dfcb302e" FullName="HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e">
+      <Services>
+        <Service Name="HippaToFHIRDemo.BizTalk_Orchestration1" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" AnalyticsEnabled="false">
+          <Ports>
+            <Port Name="Port_1" Modifier="2" BindingOption="1">
+              <SendPortRef xsi:nil="true" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef Name="ReceivePort1" />
+            </Port>
+            <Port Name="Port_2" Modifier="1" BindingOption="1">
+              <SendPortRef Name="SendPort1" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="BizTalkServerApplication" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="SendPort1" IsStatic="true" IsTwoWay="false" BindingOption="1" AnalyticsEnabled="false">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="HippaToFHIRDemo.SendPipeline1" FullyQualifiedName="HippaToFHIRDemo.SendPipeline1, HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" />
+      <PrimaryTransport>
+        <Address>http://test.fhir.org/r2/Patient</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;POST&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8" /&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;None&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/fhir+xml
+Content-Type: application/fhir+xml
+&lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2020-03-23T00:00:00</FromTime>
+        <ToTime>2020-03-23T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2020-03-23T00:00:00</FromTime>
+        <ToTime>2020-03-23T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>HippaToFHIRDemo</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="ReceivePort1" IsTwoWay="false" BindingOption="1" AnalyticsEnabled="false">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="Receive Location1">
+          <Description xsi:nil="true" />
+          <Address>C:\Vivek\HippaToFHIRDemo\In\*.xml</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2020-03-23T00:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2020-03-23T23:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2020-03-23T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2020-03-24T00:00:00</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;RenameReceivedFiles vt="11"&gt;0&lt;/RenameReceivedFiles&gt;&lt;RemoveReceivedFileDelay vt="19"&gt;10&lt;/RemoveReceivedFileDelay&gt;&lt;RemoveReceivedFileMaxInterval vt="19"&gt;300000&lt;/RemoveReceivedFileMaxInterval&gt;&lt;FileMask vt="8"&gt;*.xml&lt;/FileMask&gt;&lt;FileNetFailRetryInt vt="19"&gt;5&lt;/FileNetFailRetryInt&gt;&lt;RemoveReceivedFileRetryCount vt="19"&gt;5&lt;/RemoveReceivedFileRetryCount&gt;&lt;BatchSizeInBytes vt="19"&gt;102400&lt;/BatchSizeInBytes&gt;&lt;PollingInterval vt="19"&gt;60000&lt;/PollingInterval&gt;&lt;FileNetFailRetryCount vt="19"&gt;5&lt;/FileNetFailRetryCount&gt;&lt;BatchSize vt="19"&gt;20&lt;/BatchSize&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="HippaToFHIRDemo.ReceivePipeline1" FullyQualifiedName="HippaToFHIRDemo.ReceivePipeline1, HippaToFHIRDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1621b0c8dfcb302e" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="BizTalkServerApplication" HostTrusted="false">
+            <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+          </ReceiveHandler>
+          <ScheduleRecurrenceType>None</ScheduleRecurrenceType>
+          <ScheduleRecurenceFrom>2020-03-23T00:00:00</ScheduleRecurenceFrom>
+          <ScheduleRecurrenceInterval>1</ScheduleRecurrenceInterval>
+          <ScheduleDaysOfWeek>None</ScheduleDaysOfWeek>
+          <ScheduleMonths>None</ScheduleMonths>
+          <ScheduleMonthDays>None</ScheduleMonthDays>
+          <ScheduleOrdinalDayOfWeek>None</ScheduleOrdinalDayOfWeek>
+          <ScheduleOrdinalType>None</ScheduleOrdinalType>
+          <ScheduleIsOrdinal>false</ScheduleIsOrdinal>
+          <ScheduleLastDayOfMonth>false</ScheduleLastDayOfMonth>
+          <ScheduleAutoAdjustToDaylightSaving>true</ScheduleAutoAdjustToDaylightSaving>
+          <ScheduleTimeZone>UTC</ScheduleTimeZone>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>0</Tracking>
+      <Transforms />
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>HippaToFHIRDemo</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>

@@ -1,0 +1,234 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="0924fe91-daf9-4feb-b1fb-bffcdcd280c5" LowerBound="1.1" HigherBound="60.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="HippaToFHIRDemo" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="7568b71e-0ba6-4704-9d37-9cb158b061dc" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a4fff678-4b0d-4157-a6ef-6299c8fda74f" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="8b06701f-b5b0-4b01-9752-66f67049ba6e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.39">
+                    <om:Property Name="Ref" Value="HippaToFHIRDemo.HippaSchemas.X12_00501_270" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="090ff307-fd05-42d7-acdb-8d4fac316409" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_3" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="4bcb1a66-7784-47db-a0d4-f1ae905569b3" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="341e6d35-6866-432f-8081-fa0d27dd7bc8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.20">
+                    <om:Property Name="Ref" Value="HippaToFHIRDemo.patient" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="b62442fa-7176-4df9-a49d-3ae9c1524ee6" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="59.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="8967065b-151f-42a1-ade6-a25249341ec2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="HippaToFHIRDemo.HippaSchemas.X12_00501_270" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="10955292-521b-4041-aa27-a76daf0af3f8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="HippaToFHIRDemo.patient" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="bcaaa5cf-a7a0-434c-9a17-2d6a9905df6c" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="f465efae-aa8b-4a2b-bba3-e78ecc248521" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="31.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="Message_1" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="88e64b6a-9c1e-4357-aa15-3cb6e4d808f7" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="57.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="67587ec7-6f70-429f-a54f-58e46f90d908" ParentLink="ComplexStatement_Statement" LowerBound="36.1" HigherBound="42.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Transform" OID="fca8318f-5706-4a33-9101-40a8ce5a4e7e" ParentLink="ComplexStatement_Statement" LowerBound="39.1" HigherBound="41.1">
+                            <om:Property Name="ClassName" Value="HippaToFHIRDemo.Map2" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="c48d8b41-1b71-4d39-864f-ae6a50ce7db6" ParentLink="Transform_InputMessagePartRef" LowerBound="40.71" HigherBound="40.80">
+                                <om:Property Name="MessageRef" Value="Message_1" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="70f9c7e9-54ca-4a6d-ab32-e2d800289dfb" ParentLink="Transform_OutputMessagePartRef" LowerBound="40.36" HigherBound="40.45">
+                                <om:Property Name="MessageRef" Value="Message_2" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="05adc4f3-ccc2-44ac-98b1-361fb50d36e6" ParentLink="Construct_MessageRef" LowerBound="37.31" HigherBound="37.40">
+                            <om:Property Name="Ref" Value="Message_2" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="47e1dc90-a0c1-4292-ad68-2a4eda86c2f5" ParentLink="ComplexStatement_Statement" LowerBound="42.1" HigherBound="44.1">
+                        <om:Property Name="PortName" Value="Port_2" />
+                        <om:Property Name="MessageName" Value="Message_2" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="9b3d09e3-c9c2-4866-adf8-ec3c3f527c13" ParentLink="Scope_Catch" LowerBound="47.1" HigherBound="55.1">
+                        <om:Property Name="ExceptionName" Value="e" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="d42f4292-8d61-443b-acc2-f5c0abdbf336" ParentLink="Catch_Statement" LowerBound="50.1" HigherBound="54.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(e.InnerException.ToString(),&quot;1&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(e.Message.ToString(),&quot;1&quot;);  &#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(e.ToString(),&quot;1&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0b39a430-70d4-422a-96c7-60a05ec4593a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HippaToFHIRDemo.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="e0d92bfd-c5a7-48b7-aa13-603bed6e62f0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="70e738b8-8b0e-4687-8f9d-a38d9f9770c1" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HippaToFHIRDemo.PortType_3" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_2" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8c0fc337-6678-4968-9938-101223633d02" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module HippaToFHIRDemo
+{
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            HippaSchemas.X12_00501_270
+        };
+    };
+    internal porttype PortType_3
+    {
+        oneway Operation_1
+        {
+            patient
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 Port_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_3 Port_2;
+        message HippaSchemas.X12_00501_270 Message_1;
+        message patient Message_2;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f465efae-aa8b-4a2b-bba3-e78ecc248521")]
+            activate receive (Port_1.Operation_1, Message_1);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("88e64b6a-9c1e-4357-aa15-3cb6e4d808f7")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("67587ec7-6f70-429f-a54f-58e46f90d908")]
+                    construct Message_2
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fca8318f-5706-4a33-9101-40a8ce5a4e7e")]
+                        transform (Message_2) = HippaToFHIRDemo.Map2 (Message_1);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("47e1dc90-a0c1-4292-ad68-2a4eda86c2f5")]
+                    send (Port_2.Operation_1, Message_2);
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9b3d09e3-c9c2-4866-adf8-ec3c3f527c13")]
+                    catch (System.Exception e)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d42f4292-8d61-443b-acc2-f5c0abdbf336")]
+                        System.Diagnostics.EventLog.WriteEntry(e.InnerException.ToString(),"1");
+                        System.Diagnostics.EventLog.WriteEntry(e.Message.ToString(),"1");  
+                        System.Diagnostics.EventLog.WriteEntry(e.ToString(),"1");
+                    }
+                }
+            }
+        }
+    }
+}
+

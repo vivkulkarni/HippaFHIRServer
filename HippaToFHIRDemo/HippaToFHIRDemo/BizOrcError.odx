@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="026ec051-9a50-43e0-9470-0aaed3060596" LowerBound="1.1" HigherBound="28.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="HippaToFHIRDemo" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="6c5e8f2c-8117-45d0-9535-72c2fad9cb5c" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="27.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizOrcError" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="7be8285c-9b24-45f5-ae61-92f0665e6b87" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="9.1" HigherBound="10.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varSender" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bc1ff996-e1b1-4eed-8a23-94b164703eba" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varURI" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3dc795a4-607d-49d1-bc4d-ffca26040d30" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="11.1" HigherBound="12.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varErrorCode" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8b0a290e-f323-4f33-8e9e-0571d8d4068b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="12.1" HigherBound="14.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varErrorDescription" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="82c65728-39d3-4a7d-bd43-b0f762753af6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="7.1" HigherBound="9.1">
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="c922a321-8ecc-4705-8b18-b1fc7d4440e9" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="30595fec-bacd-4204-b020-d15060f406c5" ParentLink="ServiceBody_Declaration" LowerBound="14.15" HigherBound="14.37">
+                    <om:Property Name="Type" Value="HippaToFHIRDemo.Error" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="msgError" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="6a785d39-8e45-45b8-82c0-a8a8ecba7be5" ParentLink="ServiceBody_Statement" LowerBound="19.1" HigherBound="21.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Construct" OID="13513387-d566-4878-91e0-ab6803c8ec87" ParentLink="ServiceBody_Statement" LowerBound="21.1" HigherBound="25.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="MessageAssignment" OID="92a1ac90-d1f7-4a20-a110-0653b9e8ad30" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module HippaToFHIRDemo
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizOrcError
+    {
+
+#error "No Message Type."
+        System.String varSender;
+        System.String varURI;
+        System.String varErrorCode;
+
+#error "No Type."
+        body (message Error msgError)
+        {
+            varSender = "";
+            varURI = "";
+            varErrorCode = "";
+
+#error "No Expression."
+
+#error "No Constructed Messages."
+
+#error "Errors exist for one or more children."
+        }
+    }
+}
+

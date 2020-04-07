@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<xs:schema targetNamespace="http://EligibilityPoc.FhirSchemas.t6ransaction" xmlns="http://EligibilityPoc.FhirSchemas.t6ransaction" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType />
+  </xs:element>
+</xs:schema>

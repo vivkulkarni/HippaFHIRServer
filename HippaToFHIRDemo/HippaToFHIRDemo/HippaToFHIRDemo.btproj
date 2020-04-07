@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{597CA12B-BA42-4B24-8D64-EF8CC281C54A}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>HippaToFHIRDemo</RootNamespace>
+    <AssemblyName>HippaToFHIRDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Hippa.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="HippaSchemas\X12_00501_270.xsd">
+      <SubType>Task</SubType>
+      <TypeName>X12_00501_270</TypeName>
+      <Namespace>HippaToFHIRDemo.HippaSchemas</Namespace>
+    </Schema>
+    <Schema Include="HippaSchemas\X12_00501_271.xsd">
+      <SubType>Task</SubType>
+      <TypeName>X12_00501_271</TypeName>
+      <Namespace>HippaToFHIRDemo.HippaSchemas</Namespace>
+    </Schema>
+    <Schema Include="patient.xsd">
+      <TypeName>patient</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="bundle.xsd">
+      <TypeName>bundle</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="coverageeligibilityrequest.xsd">
+      <TypeName>coverageeligibilityrequest</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="coverageeligibilityresponse.xsd">
+      <TypeName>coverageeligibilityresponse</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="fhir-base.xsd">
+      <TypeName>fhir_base</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="fhir-xhtml.xsd">
+      <TypeName>fhir_xhtml</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="xml.xsd">
+      <TypeName>xml</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="PropertySchema.xsd">
+      <TypeName>PropertySchema</TypeName>
+      <Namespace>HippaToFHIRDemo.PropertySchema</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="PropertySchema1.xsd">
+      <TypeName>PropertySchema1</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="FHIRErrors.xsd">
+      <TypeName>FHIRErrors</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="operationoutcome.xsd">
+      <TypeName>operationoutcome</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="FlatFileSchema1.xsd">
+      <TypeName>FlatFileSchema1</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Error.xsd">
+      <TypeName>Error</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <None Include="Hippa.snk" />
+    <None Include="HippaToFHIRDemo.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="BizTalk Orchestration1.odx">
+      <TypeName>BizTalk_Orchestration1</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MapOperationOutcomeToError.btm">
+      <TypeName>MapOperationOutcomeToError</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Map2.btm">
+      <TypeName>Map2</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MapHippaToCover.btm">
+      <SubType>Task</SubType>
+      <TypeName>MapHippaToCover</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+    </Map>
+    <Pipeline Include="CoverEligibilityReqSndPipeline.btp">
+      <TypeName>CoverEligibilityReqSndPipeline</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Pipeline>
+    <XLang Include="btsOrcCoverageEligibilityRequest.odx">
+      <TypeName>BizTalk_Orchestration2</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Pipeline Include="Hippa270RcvPipeline.btp">
+      <TypeName>Hippa270RcvPipeline</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Pipeline>
+    <Map Include="MapHippa270ToCoverageEligibilityReq.btm">
+      <TypeName>MapHippa270ToCoverageEligibilityReq</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Pipeline Include="CoverEligibilityReqRcvPipeline.btp">
+      <TypeName>CoverEligibilityReqRcvPipeline</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Pipeline>
+    <XLang Include="BizOrcError.odx">
+      <TypeName>BizOrcError</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <XLang Include="btsOrcCoverageEligibilityResponse.odx">
+      <TypeName>btsOrcCoverageEligibilityResponse</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="MapCoverageEligibilityRequestFFToHTTPRequest.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Map Include="MapCoverEligibiltiyRespToError.btm">
+      <TypeName>MapCoverEligibiltiyRespToError</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="MapHippaToCover.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MapHippaToFHIR.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>
