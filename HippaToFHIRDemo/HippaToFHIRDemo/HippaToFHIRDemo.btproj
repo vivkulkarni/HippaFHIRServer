@@ -40,9 +40,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.XLANGs.Engine, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server\Microsoft.XLANGs.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="RemoveBody, Version=1.0.0.0, Culture=neutral, PublicKeyToken=383930f12db91e31, processorArchitecture=MSIL" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
@@ -125,6 +131,11 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="Identifier.xsd">
+      <TypeName>Identifier</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="PropertySchema.xsd">
       <TypeName>PropertySchema</TypeName>
       <Namespace>HippaToFHIRDemo.PropertySchema</Namespace>
@@ -166,6 +177,11 @@
     </XLang>
   </ItemGroup>
   <ItemGroup>
+    <Pipeline Include="SendErrorPipeLine.btp">
+      <TypeName>SendErrorPipeLine</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Pipeline>
     <Map Include="MapOperationOutcomeToError.btm">
       <TypeName>MapOperationOutcomeToError</TypeName>
       <Namespace>HippaToFHIRDemo</Namespace>
@@ -206,13 +222,8 @@
       <Namespace>HippaToFHIRDemo</Namespace>
       <SubType>Task</SubType>
     </Pipeline>
-    <XLang Include="BizOrcError.odx">
-      <TypeName>BizOrcError</TypeName>
-      <Namespace>HippaToFHIRDemo</Namespace>
-      <SubType>Task</SubType>
-    </XLang>
-    <XLang Include="btsOrcCoverageEligibilityResponse.odx">
-      <TypeName>btsOrcCoverageEligibilityResponse</TypeName>
+    <XLang Include="BizError.odx">
+      <TypeName>BizError</TypeName>
       <Namespace>HippaToFHIRDemo</Namespace>
       <SubType>Task</SubType>
     </XLang>

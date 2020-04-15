@@ -2,7 +2,7 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="4e60b08c-f300-4205-af1c-2e174917f48c" LowerBound="1.1" HigherBound="108.1">
+    <om:Element Type="Module" OID="4e60b08c-f300-4205-af1c-2e174917f48c" LowerBound="1.1" HigherBound="133.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="HippaToFHIRDemo" />
         <om:Property Name="Signal" Value="False" />
@@ -88,14 +88,52 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="c00778f2-417c-4661-a597-a76f4cff3549" ParentLink="Module_ServiceDeclaration" LowerBound="32.1" HigherBound="107.1">
+        <om:Element Type="PortType" OID="bd34727f-5a67-4892-863d-d57e74a06a68" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_prtSendError" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2f5c7a2e-d474-4223-b6df-e46f9b38af12" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e6d26128-6a6a-4d15-b25d-d5844c928cf7" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.23">
+                    <om:Property Name="Ref" Value="HippaToFHIRDemo.FHIRErrors" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9952cbd8-699c-40a6-8ac0-b292fba036ee" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_MsMq" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c584339e-9c49-458f-839f-f6d21c0a95d7" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="8f92efe3-0cc3-4e1e-a04a-191079d0a1fa" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="c00778f2-417c-4661-a597-a76f4cff3549" ParentLink="Module_ServiceDeclaration" LowerBound="46.1" HigherBound="132.1">
             <om:Property Name="InitializedTransactionType" Value="False" />
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="BizTalk_Orchestration2" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="VariableDeclaration" OID="dedb591d-5ec0-443a-a0c6-19e81bdb6a12" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="46.1" HigherBound="47.1">
+            <om:Element Type="VariableDeclaration" OID="dedb591d-5ec0-443a-a0c6-19e81bdb6a12" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="61.1" HigherBound="62.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -103,7 +141,7 @@
                 <om:Property Name="Name" Value="varStringCoverageEligibilityReq" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="VariableDeclaration" OID="db7a91bc-959b-4157-959d-6d7104f04a3d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="47.1" HigherBound="48.1">
+            <om:Element Type="VariableDeclaration" OID="db7a91bc-959b-4157-959d-6d7104f04a3d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="62.1" HigherBound="63.1">
                 <om:Property Name="InitialValue" Value="true" />
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.Boolean" />
@@ -112,44 +150,84 @@
                 <om:Property Name="Name" Value="varISError" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="4aea34c6-d953-43fd-a198-7a7ba5710423" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="41.1" HigherBound="42.1">
+            <om:Element Type="VariableDeclaration" OID="30e4b45b-27a1-421f-9992-f9ac175701e1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strerror" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9778f37c-a099-4f63-a266-1e7066a61dc8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Net.WebException" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="except" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dbc190ee-e7e3-492f-83f3-5866ac2e8206" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.ServiceModel.ProtocolException" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="protocol" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c9bdd509-3eb7-409a-a8e0-ec442ceaad5b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="statuscode" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ab895874-4b8e-493b-a224-b0f9ab52db19" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varIdentifier" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4aea34c6-d953-43fd-a198-7a7ba5710423" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="56.1" HigherBound="57.1">
                 <om:Property Name="Type" Value="HippaToFHIRDemo.HippaSchemas.X12_00501_270" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="msgHippa270" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="c96c4173-42b4-4001-ac62-a35998a13e87" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="42.1" HigherBound="43.1">
+            <om:Element Type="MessageDeclaration" OID="c96c4173-42b4-4001-ac62-a35998a13e87" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="57.1" HigherBound="58.1">
                 <om:Property Name="Type" Value="HippaToFHIRDemo.coverageeligibilityrequest" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="msgCoverageEligibilityReq" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="3bba0145-9bc3-42ef-956c-484b00cf417c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="43.1" HigherBound="44.1">
+            <om:Element Type="MessageDeclaration" OID="3bba0145-9bc3-42ef-956c-484b00cf417c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="58.1" HigherBound="59.1">
                 <om:Property Name="Type" Value="System.Xml.XmlDocument" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="msgCoverageEligibilityReqXML" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="3ff8d1b9-2e47-41da-af12-57267a6ff776" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="44.1" HigherBound="45.1">
+            <om:Element Type="MessageDeclaration" OID="3ff8d1b9-2e47-41da-af12-57267a6ff776" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="59.1" HigherBound="60.1">
                 <om:Property Name="Type" Value="HippaToFHIRDemo.operationoutcome" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="msgOperationOutcome" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="9c64c146-7fd1-4271-80d7-4fbfd17e9322" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="45.1" HigherBound="46.1">
-                <om:Property Name="Type" Value="HippaToFHIRDemo.Error" />
+            <om:Element Type="MessageDeclaration" OID="2f4b9b91-a7a6-4c84-ba57-558e52983846" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="msgError" />
+                <om:Property Name="Name" Value="msgIdentifier" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
             <om:Element Type="ServiceBody" OID="17525499-2b8e-4ccb-96bc-acf0542aa1cd" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="Receive" OID="8430fe8c-e862-43be-aa26-ce07e463e655" ParentLink="ServiceBody_Statement" LowerBound="50.1" HigherBound="54.1">
+                <om:Element Type="Receive" OID="8430fe8c-e862-43be-aa26-ce07e463e655" ParentLink="ServiceBody_Statement" LowerBound="70.1" HigherBound="79.1">
                     <om:Property Name="Activate" Value="True" />
                     <om:Property Name="PortName" Value="Port_ReceiveHippa" />
                     <om:Property Name="MessageName" Value="msgHippa270" />
@@ -159,166 +237,108 @@
                     <om:Property Name="Name" Value="RcvHippa270" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
-                <om:Element Type="Scope" OID="a8822a14-2470-4799-91b8-a381b505c3c6" ParentLink="ServiceBody_Statement" LowerBound="54.1" HigherBound="105.1">
+                <om:Element Type="Scope" OID="a8822a14-2470-4799-91b8-a381b505c3c6" ParentLink="ServiceBody_Statement" LowerBound="79.1" HigherBound="130.1">
                     <om:Property Name="InitializedTransactionType" Value="True" />
                     <om:Property Name="IsSynchronized" Value="False" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Scope_1" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="Construct" OID="f5c96e92-83be-4c96-a57c-cef2758918bb" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="65.1">
+                    <om:Element Type="Construct" OID="f5c96e92-83be-4c96-a57c-cef2758918bb" ParentLink="ComplexStatement_Statement" LowerBound="84.1" HigherBound="90.1">
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="ConstructMessageCoverageEligibilityReq" />
                         <om:Property Name="Signal" Value="True" />
-                        <om:Element Type="Transform" OID="872871c5-d441-42ec-be07-b3ecbb683158" ParentLink="ComplexStatement_Statement" LowerBound="62.1" HigherBound="64.1">
+                        <om:Element Type="Transform" OID="872871c5-d441-42ec-be07-b3ecbb683158" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="89.1">
                             <om:Property Name="ClassName" Value="HippaToFHIRDemo.MapHippa270ToCoverageEligibilityReq" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="TransformHippaToCoverageEligibilityReq" />
-                            <om:Property Name="Signal" Value="False" />
-                            <om:Element Type="MessagePartRef" OID="a6e688c3-6968-4583-a2af-dbfe66fd6fc2" ParentLink="Transform_InputMessagePartRef" LowerBound="63.118" HigherBound="63.129">
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="994bb4b7-d029-4840-bf22-0c65cca4ecaa" ParentLink="Transform_InputMessagePartRef" LowerBound="88.118" HigherBound="88.129">
                                 <om:Property Name="MessageRef" Value="msgHippa270" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Name" Value="MessagePartReference_1" />
                                 <om:Property Name="Signal" Value="False" />
                             </om:Element>
-                            <om:Element Type="MessagePartRef" OID="e83eb672-150d-4346-9eb4-f2426071efd3" ParentLink="Transform_OutputMessagePartRef" LowerBound="63.36" HigherBound="63.61">
+                            <om:Element Type="MessagePartRef" OID="d1cf3aab-a856-447c-ab51-4f1eff7ffc26" ParentLink="Transform_OutputMessagePartRef" LowerBound="88.36" HigherBound="88.61">
                                 <om:Property Name="MessageRef" Value="msgCoverageEligibilityReq" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Name" Value="MessagePartReference_2" />
                                 <om:Property Name="Signal" Value="False" />
                             </om:Element>
                         </om:Element>
-                        <om:Element Type="MessageRef" OID="c7e9060c-ab9f-404e-8bdc-32f1eab64de0" ParentLink="Construct_MessageRef" LowerBound="60.31" HigherBound="60.56">
+                        <om:Element Type="MessageRef" OID="c7e9060c-ab9f-404e-8bdc-32f1eab64de0" ParentLink="Construct_MessageRef" LowerBound="85.31" HigherBound="85.56">
                             <om:Property Name="Ref" Value="msgCoverageEligibilityReq" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
                     </om:Element>
-                    <om:Element Type="Send" OID="e2331b1e-6075-455e-9f03-8aa58d456f8a" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="67.1">
-                        <om:Property Name="PortName" Value="Port_FHIR_SendReceive" />
-                        <om:Property Name="MessageName" Value="msgCoverageEligibilityReq" />
-                        <om:Property Name="OperationName" Value="Operation_1" />
-                        <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Element Type="Construct" OID="d7b5d009-3f35-452d-ad7e-5dd09e02d644" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="98.1">
                         <om:Property Name="ReportToAnalyst" Value="True" />
-                        <om:Property Name="Name" Value="SendToFHIR" />
+                        <om:Property Name="Name" Value="ConstructMessage_1" />
                         <om:Property Name="Signal" Value="True" />
-                    </om:Element>
-                    <om:Element Type="Receive" OID="95dafc78-1385-4752-9c18-b5eccc69b9ca" ParentLink="ComplexStatement_Statement" LowerBound="67.1" HigherBound="69.1">
-                        <om:Property Name="Activate" Value="False" />
-                        <om:Property Name="PortName" Value="Port_FHIR_SendReceive" />
-                        <om:Property Name="MessageName" Value="msgCoverageEligibilityReqXML" />
-                        <om:Property Name="OperationName" Value="Operation_1" />
-                        <om:Property Name="OperationMessageName" Value="Response" />
-                        <om:Property Name="ReportToAnalyst" Value="True" />
-                        <om:Property Name="Name" Value="ReceiveFromFHIR" />
-                        <om:Property Name="Signal" Value="True" />
-                    </om:Element>
-                    <om:Element Type="VariableAssignment" OID="68e1f00e-dd85-445c-8919-6ec29767a88d" ParentLink="ComplexStatement_Statement" LowerBound="69.1" HigherBound="72.1">
-                        <om:Property Name="Expression" Value="varStringCoverageEligibilityReq=msgCoverageEligibilityReqXML.ToString();&#xD;&#xA;varISError=varStringCoverageEligibilityReq.Contains(&quot;issue&quot;);" />
-                        <om:Property Name="ReportToAnalyst" Value="True" />
-                        <om:Property Name="Name" Value="getErrorDescription" />
-                        <om:Property Name="Signal" Value="True" />
-                    </om:Element>
-                    <om:Element Type="Decision" OID="c20bc91f-a6e0-4510-8b4b-e253e688d6a0" ParentLink="ComplexStatement_Statement" LowerBound="72.1" HigherBound="90.1">
-                        <om:Property Name="ReportToAnalyst" Value="True" />
-                        <om:Property Name="Name" Value="Decide_1" />
-                        <om:Property Name="Signal" Value="False" />
-                        <om:Element Type="DecisionBranch" OID="3d152fb6-e9eb-4bad-94f0-b856ee9146a4" ParentLink="ReallyComplexStatement_Branch" LowerBound="73.21" HigherBound="90.1">
-                            <om:Property Name="Expression" Value="varISError" />
-                            <om:Property Name="IsGhostBranch" Value="True" />
-                            <om:Property Name="ReportToAnalyst" Value="True" />
-                            <om:Property Name="Name" Value="Rule_1" />
-                            <om:Property Name="Signal" Value="True" />
-                            <om:Element Type="Construct" OID="ef8aeb30-2ee2-49c6-82d1-81c93f943ad6" ParentLink="ComplexStatement_Statement" LowerBound="75.1" HigherBound="81.1">
-                                <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="ConstructMessage_1" />
-                                <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="MessageAssignment" OID="0bf133c7-6d3a-4d4e-bf95-2ca8027d7708" ParentLink="ComplexStatement_Statement" LowerBound="78.1" HigherBound="80.1">
-                                    <om:Property Name="Expression" Value="msgOperationOutcome=msgCoverageEligibilityReqXML;" />
-                                    <om:Property Name="ReportToAnalyst" Value="False" />
-                                    <om:Property Name="Name" Value="MessageAssignment_1" />
-                                    <om:Property Name="Signal" Value="True" />
-                                </om:Element>
-                                <om:Element Type="MessageRef" OID="9a2fdc05-fbb6-45b5-a0a1-7d63a91b66a3" ParentLink="Construct_MessageRef" LowerBound="76.35" HigherBound="76.54">
-                                    <om:Property Name="Ref" Value="msgOperationOutcome" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Signal" Value="False" />
-                                </om:Element>
-                            </om:Element>
-                            <om:Element Type="Construct" OID="5b008279-ed3a-4998-a6a7-06675ea10922" ParentLink="ComplexStatement_Statement" LowerBound="81.1" HigherBound="87.1">
-                                <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="ConstructMessageToError" />
-                                <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="Transform" OID="38944cf4-44f8-48fe-9cd9-29cb0badb258" ParentLink="ComplexStatement_Statement" LowerBound="84.1" HigherBound="86.1">
-                                    <om:Property Name="ClassName" Value="HippaToFHIRDemo.MapOperationOutcomeToError" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Name" Value="TransformOperationOutcomeToError" />
-                                    <om:Property Name="Signal" Value="True" />
-                                    <om:Element Type="MessagePartRef" OID="7f017f7b-e24b-43d3-98b4-9136f59b0099" ParentLink="Transform_InputMessagePartRef" LowerBound="85.96" HigherBound="85.115">
-                                        <om:Property Name="MessageRef" Value="msgOperationOutcome" />
-                                        <om:Property Name="ReportToAnalyst" Value="True" />
-                                        <om:Property Name="Name" Value="MessagePartReference_3" />
-                                        <om:Property Name="Signal" Value="False" />
-                                    </om:Element>
-                                    <om:Element Type="MessagePartRef" OID="eb0a6f47-c7b3-4e3a-91e0-b1849769e54f" ParentLink="Transform_OutputMessagePartRef" LowerBound="85.40" HigherBound="85.48">
-                                        <om:Property Name="MessageRef" Value="msgError" />
-                                        <om:Property Name="ReportToAnalyst" Value="True" />
-                                        <om:Property Name="Name" Value="MessagePartReference_4" />
-                                        <om:Property Name="Signal" Value="False" />
-                                    </om:Element>
-                                </om:Element>
-                                <om:Element Type="MessageRef" OID="dd4bcb2b-62bc-4e1d-9acb-480d2eb55734" ParentLink="Construct_MessageRef" LowerBound="82.35" HigherBound="82.43">
-                                    <om:Property Name="Ref" Value="msgError" />
-                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                    <om:Property Name="Signal" Value="False" />
-                                </om:Element>
-                            </om:Element>
-                            <om:Element Type="Call" OID="429cc2c9-7f08-4b2c-b57d-2b5c5b218deb" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="89.1">
-                                <om:Property Name="Identifier" Value="CallOrchestration_1" />
-                                <om:Property Name="Invokee" Value="HippaToFHIRDemo.BizOrcError" />
-                                <om:Property Name="ReportToAnalyst" Value="True" />
-                                <om:Property Name="Name" Value="CallOrchestration_1" />
-                                <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="Parameter" OID="2fd70eac-a115-4c0c-a290-b658cf4b3b17" ParentLink="InvokeStatement_Parameter">
-                                    <om:Property Name="Direction" Value="In" />
-                                    <om:Property Name="Name" Value="msgCoverageEligibilityReqXML" />
-                                    <om:Property Name="Type" Value="System.Xml.XmlDocument" />
-                                    <om:Property Name="Signal" Value="False" />
-                                </om:Element>
-                            </om:Element>
+                        <om:Element Type="MessageAssignment" OID="908afd00-8ad2-4413-8bcb-573af5b87c5b" ParentLink="ComplexStatement_Statement" LowerBound="93.1" HigherBound="97.1">
+                            <om:Property Name="Expression" Value="varIdentifier=xpath(msgCoverageEligibilityReq,&quot;string(/*[local-name()='CoverageEligibilityRequest' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='identifier' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='value' and namespace-uri()='http://hl7.org/fhir']/@*[local-name()='value' and namespace-uri()=''])&quot;);&#xD;&#xA;msgIdentifier= new System.Xml.XmlDocument();&#xD;&#xA;msgIdentifier.LoadXml(&quot;&lt;Root&gt;&lt;Value&gt;&quot;+ varIdentifier +&quot;&lt;/Value&gt;&lt;/Root&gt;&quot;);&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="MessageAssignment_1" />
+                            <om:Property Name="Signal" Value="False" />
                         </om:Element>
-                        <om:Element Type="DecisionBranch" OID="c09acfae-dd51-4c73-be9a-01b6d3c67bc4" ParentLink="ReallyComplexStatement_Branch">
-                            <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Element Type="MessageRef" OID="b91af9af-26c2-4b29-b394-03b182b4071e" ParentLink="Construct_MessageRef" LowerBound="91.31" HigherBound="91.44">
+                            <om:Property Name="Ref" Value="msgIdentifier" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
-                            <om:Property Name="Name" Value="Else" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
                     </om:Element>
-                    <om:Element Type="Send" OID="54aa5a3c-3139-41d1-bd39-103870e18325" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="92.1">
-                        <om:Property Name="PortName" Value="Port_SendCovereageEligibilityReq" />
-                        <om:Property Name="MessageName" Value="msgCoverageEligibilityReqXML" />
+                    <om:Element Type="Send" OID="142923ef-14e0-4fd0-9985-4d7fa0f8000e" ParentLink="ComplexStatement_Statement" LowerBound="98.1" HigherBound="100.1">
+                        <om:Property Name="PortName" Value="Port_MsMq" />
+                        <om:Property Name="MessageName" Value="msgIdentifier" />
                         <om:Property Name="OperationName" Value="Operation_1" />
                         <om:Property Name="OperationMessageName" Value="Request" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
-                        <om:Property Name="Name" Value="SendToFileSystem" />
+                        <om:Property Name="Name" Value="Send_1" />
                         <om:Property Name="Signal" Value="True" />
                     </om:Element>
-                    <om:Element Type="Catch" OID="79e90a31-a0f1-4ee4-a30f-ba083e1d890b" ParentLink="Scope_Catch" LowerBound="95.1" HigherBound="103.1">
-                        <om:Property Name="ExceptionName" Value="e" />
-                        <om:Property Name="ExceptionType" Value="System.Exception" />
-                        <om:Property Name="IsFaultMessage" Value="False" />
+                    <om:Element Type="Scope" OID="32fa3e96-4911-41ef-92b6-2ee1e81381dc" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="128.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
-                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Name" Value="Scope_2" />
                         <om:Property Name="Signal" Value="True" />
-                        <om:Element Type="VariableAssignment" OID="7722df72-bef2-4f46-9c54-d7658d6d09e8" ParentLink="Catch_Statement" LowerBound="98.1" HigherBound="102.1">
-                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(e.InnerException.ToString(),&quot;1&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(e.Message.ToString(),&quot;1&quot;);  &#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(e.ToString(),&quot;1&quot;);" />
+                        <om:Element Type="Send" OID="e2331b1e-6075-455e-9f03-8aa58d456f8a" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="107.1">
+                            <om:Property Name="PortName" Value="Port_FHIR_SendReceive" />
+                            <om:Property Name="MessageName" Value="msgCoverageEligibilityReq" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
-                            <om:Property Name="Name" Value="LogErrors" />
+                            <om:Property Name="Name" Value="SendToFHIR" />
                             <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="95dafc78-1385-4752-9c18-b5eccc69b9ca" ParentLink="ComplexStatement_Statement" LowerBound="107.1" HigherBound="109.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_FHIR_SendReceive" />
+                            <om:Property Name="MessageName" Value="msgCoverageEligibilityReqXML" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ReceiveFromFHIR" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Catch" OID="2a0e8813-08b9-4287-b840-e4ee77597bf0" ParentLink="Scope_Catch" LowerBound="112.1" HigherBound="126.1">
+                            <om:Property Name="ExceptionName" Value="exp" />
+                            <om:Property Name="ExceptionType" Value="Microsoft.XLANGs.Core.XlangSoapException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CatchException_3" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="ba87f8cd-b2db-4e35-8892-148f7ff9c093" ParentLink="Catch_Statement" LowerBound="115.1" HigherBound="125.1">
+                                <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;ExceptionDemo - DeliveryFailureException&quot;, exp.ToString() );&#xD;&#xA;&#xD;&#xA;//protocol=((System.ServiceModel.ProtocolException) exp);&#xD;&#xA;//except= ((System.Net.WebException) protocol.InnerException);&#xD;&#xA;//statuscode= except.Status.ToString();&#xD;&#xA;&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;MyApplicationThatLogs&quot;, &quot;test&quot;, System.Diagnostics.EventLogEntryType.Error, 100, 0);&#xD;&#xA;//System.Diagnostics.EventLog.WriteEntry(&quot;MyApplicationThatLogs&quot;, exp.Message.ToString(), System.Diagnostics.EventLogEntryType.Error, 100, 0);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Test My System&quot;,statuscode);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="LogErrors" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
                         </om:Element>
                     </om:Element>
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="34a347cf-066d-464d-87eb-9640d8483217" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="35.1" HigherBound="37.1">
+            <om:Element Type="PortDeclaration" OID="34a347cf-066d-464d-87eb-9640d8483217" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="49.1" HigherBound="51.1">
                 <om:Property Name="PortModifier" Value="Implements" />
                 <om:Property Name="Orientation" Value="Unbound" />
                 <om:Property Name="PortIndex" Value="-1" />
@@ -330,39 +350,39 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Port_ReceiveHippa" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="7c3b4dc9-5f60-4259-9ab2-5607a7fd9e9b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="35.1" HigherBound="36.1">
+                <om:Element Type="LogicalBindingAttribute" OID="7c3b4dc9-5f60-4259-9ab2-5607a7fd9e9b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="49.1" HigherBound="50.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="0e195815-59d2-44dc-a204-5841d3bcee0e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="37.1" HigherBound="39.1">
+            <om:Element Type="PortDeclaration" OID="7dd59cc8-c04f-450b-939f-1c76659bac17" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="51.1" HigherBound="53.1">
                 <om:Property Name="PortModifier" Value="Uses" />
                 <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="PortIndex" Value="29" />
                 <om:Property Name="IsWebPort" Value="False" />
                 <om:Property Name="OrderedDelivery" Value="False" />
                 <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HippaToFHIRDemo.PortType_MsMq" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_MsMq" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8bea2228-ed1d-4d4f-b4b4-cc9481607209" ParentLink="PortDeclaration_CLRAttribute" LowerBound="51.1" HigherBound="52.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0e195815-59d2-44dc-a204-5841d3bcee0e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="53.1" HigherBound="56.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="36" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
                 <om:Property Name="Type" Value="HippaToFHIRDemo.PortType_5" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Port_FHIR_SendReceive" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="e58e49bc-8a92-4eae-9f29-e1b70e39a53d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="37.1" HigherBound="38.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="67715803-460e-4003-9b3b-6aa3f2370ab0" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="39.1" HigherBound="41.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="67" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="HippaToFHIRDemo.PortType_6" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="Port_SendCovereageEligibilityReq" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="3f469e5f-bfa4-4033-95a0-ead173f28563" ParentLink="PortDeclaration_CLRAttribute" LowerBound="39.1" HigherBound="40.1">
+                <om:Element Type="LogicalBindingAttribute" OID="e58e49bc-8a92-4eae-9f29-e1b70e39a53d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="53.1" HigherBound="54.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
@@ -401,28 +421,53 @@ module HippaToFHIRDemo
             System.Xml.XmlDocument
         };
     };
+    internal porttype PortType_prtSendError
+    {
+        oneway Operation_1
+        {
+            FHIRErrors
+        };
+    };
+    internal porttype PortType_MsMq
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
     internal service BizTalk_Orchestration2
     {
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
         port implements PortType_2 Port_ReceiveHippa;
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
-        port uses PortType_5 Port_FHIR_SendReceive;
+        port uses PortType_MsMq Port_MsMq;
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
-        port uses PortType_6 Port_SendCovereageEligibilityReq;
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses PortType_5 Port_FHIR_SendReceive;
         message HippaSchemas.X12_00501_270 msgHippa270;
         message coverageeligibilityrequest msgCoverageEligibilityReq;
         message System.Xml.XmlDocument msgCoverageEligibilityReqXML;
         message operationoutcome msgOperationOutcome;
-        message Error msgError;
+        message System.Xml.XmlDocument msgIdentifier;
         System.String varStringCoverageEligibilityReq;
         System.Boolean varISError;
+        System.String strerror;
+        System.Net.WebException except;
+        System.ServiceModel.ProtocolException protocol;
+        System.String statuscode;
+        System.String varIdentifier;
         body ()
         {
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("8430fe8c-e862-43be-aa26-ce07e463e655")]
             activate receive (Port_ReceiveHippa.Operation_1, msgHippa270);
             varStringCoverageEligibilityReq = "";
             varISError = true;
+            strerror = "";
+            except = new System.Net.WebException();
+            protocol = new System.ServiceModel.ProtocolException();
+            statuscode = "";
+            varIdentifier = "";
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("a8822a14-2470-4799-91b8-a381b505c3c6")]
             scope
             {
@@ -434,43 +479,43 @@ module HippaToFHIRDemo
                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("872871c5-d441-42ec-be07-b3ecbb683158")]
                         transform (msgCoverageEligibilityReq) = HippaToFHIRDemo.MapHippa270ToCoverageEligibilityReq (msgHippa270);
                     }
-                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e2331b1e-6075-455e-9f03-8aa58d456f8a")]
-                    send (Port_FHIR_SendReceive.Operation_1, msgCoverageEligibilityReq);
-                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("95dafc78-1385-4752-9c18-b5eccc69b9ca")]
-                    receive (Port_FHIR_SendReceive.Operation_1, msgCoverageEligibilityReqXML);
-                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("68e1f00e-dd85-445c-8919-6ec29767a88d")]
-                    varStringCoverageEligibilityReq=msgCoverageEligibilityReqXML.ToString();
-                    varISError=varStringCoverageEligibilityReq.Contains("issue");
-                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c20bc91f-a6e0-4510-8b4b-e253e688d6a0")]
-                    if (varISError)
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d7b5d009-3f35-452d-ad7e-5dd09e02d644")]
+                    construct msgIdentifier
                     {
-                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ef8aeb30-2ee2-49c6-82d1-81c93f943ad6")]
-                        construct msgOperationOutcome
-                        {
-                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0bf133c7-6d3a-4d4e-bf95-2ca8027d7708")]
-                            msgOperationOutcome=msgCoverageEligibilityReqXML;
-                        }
-                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5b008279-ed3a-4998-a6a7-06675ea10922")]
-                        construct msgError
-                        {
-                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("38944cf4-44f8-48fe-9cd9-29cb0badb258")]
-                            transform (msgError) = HippaToFHIRDemo.MapOperationOutcomeToError (msgOperationOutcome);
-                        }
-                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("429cc2c9-7f08-4b2c-b57d-2b5c5b218deb")]
-                        call HippaToFHIRDemo.BizOrcError (msgCoverageEligibilityReqXML);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("908afd00-8ad2-4413-8bcb-573af5b87c5b")]
+                        varIdentifier=xpath(msgCoverageEligibilityReq,"string(/*[local-name()='CoverageEligibilityRequest' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='identifier' and namespace-uri()='http://hl7.org/fhir']/*[local-name()='value' and namespace-uri()='http://hl7.org/fhir']/@*[local-name()='value' and namespace-uri()=''])");
+                        msgIdentifier= new System.Xml.XmlDocument();
+                        msgIdentifier.LoadXml("<Root><Value>"+ varIdentifier +"</Value></Root>");
                     }
-                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("54aa5a3c-3139-41d1-bd39-103870e18325")]
-                    send (Port_SendCovereageEligibilityReq.Operation_1, msgCoverageEligibilityReqXML);
-                }
-                exceptions
-                {
-                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("79e90a31-a0f1-4ee4-a30f-ba083e1d890b")]
-                    catch (System.Exception e)
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("142923ef-14e0-4fd0-9985-4d7fa0f8000e")]
+                    send (Port_MsMq.Operation_1, msgIdentifier);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("32fa3e96-4911-41ef-92b6-2ee1e81381dc")]
+                    scope
                     {
-                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7722df72-bef2-4f46-9c54-d7658d6d09e8")]
-                        System.Diagnostics.EventLog.WriteEntry(e.InnerException.ToString(),"1");
-                        System.Diagnostics.EventLog.WriteEntry(e.Message.ToString(),"1");  
-                        System.Diagnostics.EventLog.WriteEntry(e.ToString(),"1");
+                        body
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e2331b1e-6075-455e-9f03-8aa58d456f8a")]
+                            send (Port_FHIR_SendReceive.Operation_1, msgCoverageEligibilityReq);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("95dafc78-1385-4752-9c18-b5eccc69b9ca")]
+                            receive (Port_FHIR_SendReceive.Operation_1, msgCoverageEligibilityReqXML);
+                        }
+                        exceptions
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2a0e8813-08b9-4287-b840-e4ee77597bf0")]
+                            catch (Microsoft.XLANGs.Core.XlangSoapException exp)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("ba87f8cd-b2db-4e35-8892-148f7ff9c093")]
+                                System.Diagnostics.EventLog.WriteEntry("ExceptionDemo - DeliveryFailureException", exp.ToString() );
+                                
+                                //protocol=((System.ServiceModel.ProtocolException) exp);
+                                //except= ((System.Net.WebException) protocol.InnerException);
+                                //statuscode= except.Status.ToString();
+                                
+                                //System.Diagnostics.EventLog.WriteEntry("MyApplicationThatLogs", "test", System.Diagnostics.EventLogEntryType.Error, 100, 0);
+                                //System.Diagnostics.EventLog.WriteEntry("MyApplicationThatLogs", exp.Message.ToString(), System.Diagnostics.EventLogEntryType.Error, 100, 0);
+                                System.Diagnostics.EventLog.WriteEntry("Test My System",statuscode);
+                            }
+                        }
                     }
                 }
             }
