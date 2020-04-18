@@ -177,6 +177,21 @@
     </XLang>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MapOperationOutcomeToError.xsl" />
+    <Content Include="MapTransform_1.xsl" />
+    <Content Include="TransformOperationOutcomeToError.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Map Include="Transform_1.btm">
+      <TypeName>Transform_1</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="TransformOperationOutcomeToError.btm">
+      <TypeName>TransformOperationOutcomeToError</TypeName>
+      <Namespace>HippaToFHIRDemo</Namespace>
+      <SubType>Task</SubType>
+    </Map>
     <Pipeline Include="SendErrorPipeLine.btp">
       <TypeName>SendErrorPipeLine</TypeName>
       <Namespace>HippaToFHIRDemo</Namespace>

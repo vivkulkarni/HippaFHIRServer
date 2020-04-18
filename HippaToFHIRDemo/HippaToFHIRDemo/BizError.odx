@@ -2,7 +2,7 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="8f5faccc-50d2-44ec-9335-89ea58274c97" LowerBound="1.1" HigherBound="102.1">
+    <om:Element Type="Module" OID="8f5faccc-50d2-44ec-9335-89ea58274c97" LowerBound="1.1" HigherBound="113.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="HippaToFHIRDemo" />
         <om:Property Name="Signal" Value="False" />
@@ -101,14 +101,14 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="3d344ac4-2016-4cc2-a2d4-5240f1452c0c" ParentLink="Module_ServiceDeclaration" LowerBound="39.1" HigherBound="101.1">
+        <om:Element Type="ServiceDeclaration" OID="3d344ac4-2016-4cc2-a2d4-5240f1452c0c" ParentLink="Module_ServiceDeclaration" LowerBound="39.1" HigherBound="112.1">
             <om:Property Name="InitializedTransactionType" Value="False" />
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="BizError" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="VariableDeclaration" OID="7b28755a-f509-4277-b40a-14f69999bcca" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="53.1" HigherBound="54.1">
+            <om:Element Type="VariableDeclaration" OID="7b28755a-f509-4277-b40a-14f69999bcca" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="56.1" HigherBound="57.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -116,7 +116,7 @@
                 <om:Property Name="Name" Value="varException" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="VariableDeclaration" OID="ea083343-9286-44dc-a249-014da85bf35f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="54.1" HigherBound="55.1">
+            <om:Element Type="VariableDeclaration" OID="ea083343-9286-44dc-a249-014da85bf35f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -124,7 +124,7 @@
                 <om:Property Name="Name" Value="varStrExceptionXML" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="VariableDeclaration" OID="3687763d-c38b-4dfe-9faa-2f1610ddb247" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="55.1" HigherBound="56.1">
+            <om:Element Type="VariableDeclaration" OID="3687763d-c38b-4dfe-9faa-2f1610ddb247" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="58.1" HigherBound="59.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -181,9 +181,30 @@
                 <om:Property Name="Name" Value="msgIdentity" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
+            <om:Element Type="MessageDeclaration" OID="acf28851-393b-4f3a-8cb2-ea8cf595e480" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgErrorXml" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ce50cc30-d46e-442f-8d82-ca7a3c0714b3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="54.1" HigherBound="55.1">
+                <om:Property Name="Type" Value="HippaToFHIRDemo.FHIRErrors" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgError1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="61fcfa9c-1f43-4956-a5c6-938357dc8147" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="Type" Value="HippaToFHIRDemo.FHIRErrors" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgError3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
             <om:Element Type="ServiceBody" OID="9350bde5-86d6-4cfa-b3b2-047267ee93e0" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="Receive" OID="a9ed35a9-581f-4ec8-a330-1680597b1139" ParentLink="ServiceBody_Statement" LowerBound="58.1" HigherBound="63.1">
+                <om:Element Type="Receive" OID="a9ed35a9-581f-4ec8-a330-1680597b1139" ParentLink="ServiceBody_Statement" LowerBound="61.1" HigherBound="66.1">
                     <om:Property Name="Activate" Value="True" />
                     <om:Property Name="PortName" Value="Port_1" />
                     <om:Property Name="MessageName" Value="msgErrorReceived" />
@@ -192,108 +213,126 @@
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Receive_1" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="DNFPredicate" OID="530f7b6d-01cc-4c19-874e-948687207fd9" ParentLink="Receive_DNFPredicate">
+                    <om:Element Type="DNFPredicate" OID="742c076a-7bb8-4741-b182-dca0bd5625b3" ParentLink="Receive_DNFPredicate">
                         <om:Property Name="LHS" Value="ErrorReport.SendPortName" />
-                        <om:Property Name="RHS" Value="&quot;SendPort3&quot;" />
+                        <om:Property Name="RHS" Value="&quot;SndToFHIRServer&quot;" />
                         <om:Property Name="Grouping" Value="AND" />
                         <om:Property Name="Operator" Value="Equals" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="VariableAssignment" OID="73456ac9-f78e-4a4c-97d3-de20c485217b" ParentLink="ServiceBody_Statement" LowerBound="63.1" HigherBound="67.1">
+                <om:Element Type="Delay" OID="ec7ba3be-1266-45b2-b337-1aab94082a49" ParentLink="ServiceBody_Statement" LowerBound="66.1" HigherBound="68.1">
+                    <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,1,0);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Delay_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="73456ac9-f78e-4a4c-97d3-de20c485217b" ParentLink="ServiceBody_Statement" LowerBound="68.1" HigherBound="72.1">
                     <om:Property Name="Expression" Value="varException=System.Convert.ToString(msgErrorReceived(ErrorReport.Description));&#xD;&#xA;varStrExceptionXML=varException.Substring(134,varException.Length-134);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;ExceptionDemo - DeliveryFailureException&quot;,  varStrExceptionXML);&#xD;&#xA;" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Expression_1" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
-                <om:Element Type="Construct" OID="16c61249-c8e8-4d68-bc8b-29e13faa6b24" ParentLink="ServiceBody_Statement" LowerBound="67.1" HigherBound="78.1">
+                <om:Element Type="Construct" OID="16c61249-c8e8-4d68-bc8b-29e13faa6b24" ParentLink="ServiceBody_Statement" LowerBound="72.1" HigherBound="83.1">
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="ConstructMessage_2" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="MessageAssignment" OID="29341d7b-9f26-486b-80b6-1ee085e92fe1" ParentLink="ComplexStatement_Statement" LowerBound="70.1" HigherBound="77.1">
+                    <om:Element Type="MessageAssignment" OID="29341d7b-9f26-486b-80b6-1ee085e92fe1" ParentLink="ComplexStatement_Statement" LowerBound="75.1" HigherBound="82.1">
                         <om:Property Name="Expression" Value="msgIdentifier= new System.Xml.XmlDocument();&#xD;&#xA;msgIdentifier.Load(&quot;F:\\Vivek\\MSMQOut\\text.xml&quot;);&#xD;&#xA;msgIdentity=msgIdentifier;&#xD;&#xA;varIdentifier=xpath(msgIdentifier,&quot;string(/Root/Value)&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;ExceptionDemo -Identity&quot;,  varIdentifier);&#xD;&#xA;&#xD;&#xA;" />
                         <om:Property Name="ReportToAnalyst" Value="False" />
                         <om:Property Name="Name" Value="MessageAssignment_2" />
                         <om:Property Name="Signal" Value="True" />
                     </om:Element>
-                    <om:Element Type="MessageRef" OID="5faca663-4bf3-4e98-84ef-b821f075136c" ParentLink="Construct_MessageRef" LowerBound="68.23" HigherBound="68.34">
+                    <om:Element Type="MessageRef" OID="5faca663-4bf3-4e98-84ef-b821f075136c" ParentLink="Construct_MessageRef" LowerBound="73.23" HigherBound="73.34">
                         <om:Property Name="Ref" Value="msgIdentity" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
-                    <om:Element Type="MessageRef" OID="5d65e17a-5d53-4d5e-8cfa-5f13e1b2265e" ParentLink="Construct_MessageRef" LowerBound="68.36" HigherBound="68.49">
+                    <om:Element Type="MessageRef" OID="5d65e17a-5d53-4d5e-8cfa-5f13e1b2265e" ParentLink="Construct_MessageRef" LowerBound="73.36" HigherBound="73.49">
                         <om:Property Name="Ref" Value="msgIdentifier" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="Construct" OID="7cfc218d-4c66-437a-b05e-bb9ed0c2470d" ParentLink="ServiceBody_Statement" LowerBound="78.1" HigherBound="85.1">
+                <om:Element Type="VariableAssignment" OID="956ab1fd-9e4f-4a10-b8a4-59c08dca0703" ParentLink="ServiceBody_Statement" LowerBound="83.1" HigherBound="85.1">
+                    <om:Property Name="Expression" Value="System.IO.File.Delete(&quot;F:\\Vivek\\MSMQOut\\text.xml&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="7cfc218d-4c66-437a-b05e-bb9ed0c2470d" ParentLink="ServiceBody_Statement" LowerBound="85.1" HigherBound="92.1">
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="ConstructMessage_1" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="MessageAssignment" OID="a260f857-dc49-45da-9352-4fa4a32d2396" ParentLink="ComplexStatement_Statement" LowerBound="81.1" HigherBound="84.1">
+                    <om:Element Type="MessageAssignment" OID="a260f857-dc49-45da-9352-4fa4a32d2396" ParentLink="ComplexStatement_Statement" LowerBound="88.1" HigherBound="91.1">
                         <om:Property Name="Expression" Value="msgErrXMLDocument = new System.Xml.XmlDocument();&#xD;&#xA;msgErrXMLDocument.LoadXml(varStrExceptionXML);&#xD;&#xA;" />
                         <om:Property Name="ReportToAnalyst" Value="False" />
                         <om:Property Name="Name" Value="MessageAssignment_1" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
-                    <om:Element Type="MessageRef" OID="f81f3b03-1e1e-47c7-8d8a-e8f33474e656" ParentLink="Construct_MessageRef" LowerBound="79.23" HigherBound="79.40">
+                    <om:Element Type="MessageRef" OID="f81f3b03-1e1e-47c7-8d8a-e8f33474e656" ParentLink="Construct_MessageRef" LowerBound="86.23" HigherBound="86.40">
                         <om:Property Name="Ref" Value="msgErrXMLDocument" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="Construct" OID="41737673-8e23-4822-8653-52ae1ab25d68" ParentLink="ServiceBody_Statement" LowerBound="85.1" HigherBound="91.1">
+                <om:Element Type="Construct" OID="41737673-8e23-4822-8653-52ae1ab25d68" ParentLink="ServiceBody_Statement" LowerBound="92.1" HigherBound="99.1">
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="ConstructMessage_1" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="MessageAssignment" OID="8f875770-32cd-4a19-8069-95f32a8cadec" ParentLink="ComplexStatement_Statement" LowerBound="88.1" HigherBound="90.1">
-                        <om:Property Name="Expression" Value="msgOperationOutcome=msgErrXMLDocument;" />
+                    <om:Element Type="MessageAssignment" OID="8f875770-32cd-4a19-8069-95f32a8cadec" ParentLink="ComplexStatement_Statement" LowerBound="95.1" HigherBound="98.1">
+                        <om:Property Name="Expression" Value="msgOperationOutcome=msgErrXMLDocument;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;ExceptionDemo 1&quot;,  &quot;T1&quot;);&#xD;&#xA;" />
                         <om:Property Name="ReportToAnalyst" Value="False" />
                         <om:Property Name="Name" Value="MessageAssignment_1" />
-                        <om:Property Name="Signal" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
                     </om:Element>
-                    <om:Element Type="MessageRef" OID="6d05bb11-e8a1-44df-8c0a-ee3cee14aa5b" ParentLink="Construct_MessageRef" LowerBound="86.23" HigherBound="86.42">
+                    <om:Element Type="MessageRef" OID="6d05bb11-e8a1-44df-8c0a-ee3cee14aa5b" ParentLink="Construct_MessageRef" LowerBound="93.23" HigherBound="93.42">
                         <om:Property Name="Ref" Value="msgOperationOutcome" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="Construct" OID="742e227a-c1e9-4c7c-8c10-3ff119de3aae" ParentLink="ServiceBody_Statement" LowerBound="91.1" HigherBound="97.1">
+                <om:Element Type="Construct" OID="742e227a-c1e9-4c7c-8c10-3ff119de3aae" ParentLink="ServiceBody_Statement" LowerBound="99.1" HigherBound="108.1">
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="ConstructMessageToError" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="Transform" OID="b591155a-826f-4d4e-b4c5-62cb5153cd25" ParentLink="ComplexStatement_Statement" LowerBound="94.1" HigherBound="96.1">
-                        <om:Property Name="ClassName" Value="HippaToFHIRDemo.MapOperationOutcomeToError" />
+                    <om:Element Type="Transform" OID="b591155a-826f-4d4e-b4c5-62cb5153cd25" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="104.1">
+                        <om:Property Name="ClassName" Value="HippaToFHIRDemo.TransformOperationOutcomeToError" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="TransformOperationOutcomeToError" />
                         <om:Property Name="Signal" Value="False" />
-                        <om:Element Type="MessagePartRef" OID="c4d15601-babc-4f58-bc55-7810d2faf1c2" ParentLink="Transform_OutputMessagePartRef" LowerBound="95.28" HigherBound="95.36">
+                        <om:Element Type="MessagePartRef" OID="93d51a6a-9924-4394-a010-be7662b6923d" ParentLink="Transform_OutputMessagePartRef" LowerBound="103.28" HigherBound="103.36">
                             <om:Property Name="MessageRef" Value="msgError" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="MessagePartReference_2" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
-                        <om:Element Type="MessagePartRef" OID="f4e4ead0-f4fe-4016-bba6-2c99734e732b" ParentLink="Transform_InputMessagePartRef" LowerBound="95.84" HigherBound="95.95">
+                        <om:Element Type="MessagePartRef" OID="1917504b-b3ae-42c0-84a0-8ce2ce84459c" ParentLink="Transform_InputMessagePartRef" LowerBound="103.90" HigherBound="103.101">
                             <om:Property Name="MessageRef" Value="msgIdentity" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="MessagePartReference_1" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
-                        <om:Element Type="MessagePartRef" OID="71b706a1-5437-446e-ab01-96dfb031e5e1" ParentLink="Transform_InputMessagePartRef" LowerBound="95.97" HigherBound="95.116">
+                        <om:Element Type="MessagePartRef" OID="79527044-6c85-4ab7-85ab-5011e134dfdb" ParentLink="Transform_InputMessagePartRef" LowerBound="103.103" HigherBound="103.122">
                             <om:Property Name="MessageRef" Value="msgOperationOutcome" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="MessagePartReference_3" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
                     </om:Element>
-                    <om:Element Type="MessageRef" OID="a0749dd2-727b-4132-baa0-d909ef1fc945" ParentLink="Construct_MessageRef" LowerBound="92.23" HigherBound="92.31">
+                    <om:Element Type="MessageAssignment" OID="f257e3a4-bb52-43a5-a9ca-d92bab1c652d" ParentLink="ComplexStatement_Statement" LowerBound="104.1" HigherBound="107.1">
+                        <om:Property Name="Expression" Value="xpath(msgError,&quot;/*[local-name()='FHIRErrors' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='records' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='record' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='identifier' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='value' and namespace-uri()='http:\\HippaToFHIRDemo']/@*[local-name()='Idvalue' and namespace-uri()='']&quot;)=varIdentifier;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;ExceptionDemo 2&quot;,  &quot;T3&quot;);&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_4" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="a0749dd2-727b-4132-baa0-d909ef1fc945" ParentLink="Construct_MessageRef" LowerBound="100.23" HigherBound="100.31">
                         <om:Property Name="Ref" Value="msgError" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="Send" OID="63fbc0dc-0b3e-4d5f-8996-1b1c3c32dbc4" ParentLink="ServiceBody_Statement" LowerBound="97.1" HigherBound="99.1">
+                <om:Element Type="Send" OID="63fbc0dc-0b3e-4d5f-8996-1b1c3c32dbc4" ParentLink="ServiceBody_Statement" LowerBound="108.1" HigherBound="110.1">
                     <om:Property Name="PortName" Value="Port_2" />
                     <om:Property Name="MessageName" Value="msgError" />
                     <om:Property Name="OperationName" Value="Operation_1" />
@@ -323,7 +362,7 @@
             <om:Element Type="PortDeclaration" OID="b9082ddd-4817-49f4-9291-7ad67bbc0ca1" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="44.1" HigherBound="46.1">
                 <om:Property Name="PortModifier" Value="Uses" />
                 <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="51" />
+                <om:Property Name="PortIndex" Value="65" />
                 <om:Property Name="IsWebPort" Value="False" />
                 <om:Property Name="OrderedDelivery" Value="False" />
                 <om:Property Name="DeliveryNotification" Value="None" />
@@ -392,16 +431,21 @@ module HippaToFHIRDemo
         message coverageeligibilityrequest Message_2;
         message System.Xml.XmlDocument msgIdentifier;
         message Identifier msgIdentity;
+        message System.Xml.XmlDocument msgErrorXml;
+        message FHIRErrors msgError1;
+        message FHIRErrors msgError3;
         System.String varException;
         System.String varStrExceptionXML;
         System.String varIdentifier;
         body ()
         {
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("a9ed35a9-581f-4ec8-a330-1680597b1139")]
-            activate ((ErrorReport.SendPortName == "SendPort3"))receive (Port_1.Operation_1, msgErrorReceived);
+            activate ((ErrorReport.SendPortName == "SndToFHIRServer"))receive (Port_1.Operation_1, msgErrorReceived);
             varException = "";
             varStrExceptionXML = "";
             varIdentifier = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ec7ba3be-1266-45b2-b337-1aab94082a49")]
+            delay new System.TimeSpan(0,0,1,0);
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("73456ac9-f78e-4a4c-97d3-de20c485217b")]
             varException=System.Convert.ToString(msgErrorReceived(ErrorReport.Description));
             varStrExceptionXML=varException.Substring(134,varException.Length-134);
@@ -417,6 +461,8 @@ module HippaToFHIRDemo
                 System.Diagnostics.EventLog.WriteEntry("ExceptionDemo -Identity",  varIdentifier);
                 
             }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("956ab1fd-9e4f-4a10-b8a4-59c08dca0703")]
+            System.IO.File.Delete("F:\\Vivek\\MSMQOut\\text.xml");
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("7cfc218d-4c66-437a-b05e-bb9ed0c2470d")]
             construct msgErrXMLDocument
             {
@@ -429,12 +475,16 @@ module HippaToFHIRDemo
             {
                 [Microsoft.XLANGs.BaseTypes.DesignerPosition("8f875770-32cd-4a19-8069-95f32a8cadec")]
                 msgOperationOutcome=msgErrXMLDocument;
+                System.Diagnostics.EventLog.WriteEntry("ExceptionDemo 1",  "T1");
             }
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("742e227a-c1e9-4c7c-8c10-3ff119de3aae")]
             construct msgError
             {
                 [Microsoft.XLANGs.BaseTypes.DesignerPosition("b591155a-826f-4d4e-b4c5-62cb5153cd25")]
-                transform (msgError) = HippaToFHIRDemo.MapOperationOutcomeToError (msgIdentity, msgOperationOutcome);
+                transform (msgError) = HippaToFHIRDemo.TransformOperationOutcomeToError (msgIdentity, msgOperationOutcome);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("f257e3a4-bb52-43a5-a9ca-d92bab1c652d")]
+                xpath(msgError,"/*[local-name()='FHIRErrors' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='records' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='record' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='identifier' and namespace-uri()='http:\\HippaToFHIRDemo']/*[local-name()='value' and namespace-uri()='http:\\HippaToFHIRDemo']/@*[local-name()='Idvalue' and namespace-uri()='']")=varIdentifier;
+                System.Diagnostics.EventLog.WriteEntry("ExceptionDemo 2",  "T3");
             }
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("63fbc0dc-0b3e-4d5f-8996-1b1c3c32dbc4")]
             send (Port_2.Operation_1, msgError);
